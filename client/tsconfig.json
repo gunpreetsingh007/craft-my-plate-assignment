@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Update target for modern browsers supported by Vite
+    "useDefineForClassFields": true, // Required for Vite
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Adjusted lib
+    "module": "ESNext", // Use ESNext module system
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // Recommended for Vite
+    "allowImportingTsExtensions": true, // Required for bundler resolution
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // Vite handles emission
+    "jsx": "react-jsx", // Keep react-jsx
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true, // Optional: Lint check
+    "noUnusedParameters": true, // Optional: Lint check
+    "noFallthroughCasesInSwitch": true,
+
+    /* Add or modify types array */
+    "types": ["vite/client"], // Add this line
+
+    /* Kept/Added */
+    "allowSyntheticDefaultImports": true, // Keep for compatibility
+    "forceConsistentCasingInFileNames": true // Keep for consistency
+  },
+  "include": ["src"], // Keep including src
+  "references": [{ "path": "./tsconfig.node.json" }] // Add reference to tsconfig.node.json
+}
